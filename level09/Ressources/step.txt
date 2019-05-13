@@ -1,0 +1,7 @@
+# Apres des test on voit que le programe change argv[1] avec une incrementation de 1 sur chaque caracteres
+
+g++ resolver.cpp
+scp -P 4242 level09@172.16.204.128:/home/user/level09 ./token
+25749xKZ8L7DkSCwJkT9dyv6f
+
+# On obtient "f3iji1ju5yuevaus41q1afiuq"

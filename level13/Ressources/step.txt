@@ -1,0 +1,10 @@
+# On va remplacer la fonction system getuid qui est appele dans le programe pour renvoyer 4242
+
+mkdir /tmp/level13
+cd /tmp/level13
+# copy getuid.c
+gcc -shared -o getuid.so -fPIC getuid.c
+export LD_PRELOAD=$PWD/getuid.so
+cd
+gdb ./level13
+> run

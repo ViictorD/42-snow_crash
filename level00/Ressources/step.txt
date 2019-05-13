@@ -1,0 +1,8 @@
+cd /
+find -user flag00 2>&-
+
+cat /usr/sbin/john
+# or cat /rofs/usr/sbin/john
+
+# decod.fr -> cesar
+# get the string 'nottoohardhere'

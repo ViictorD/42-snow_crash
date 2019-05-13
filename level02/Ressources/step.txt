@@ -1,0 +1,14 @@
+
+# Copy pcap file to this machin
+
+scp -P 4242 level02@172.16.212.128:/home/user/level02/level02.pcap .
+# password
+f2av5il02puano7naaf6adaaf
+
+chmod 666 level02.pcap
+
+# On ouvre avec cloudshark
+# Sur un des packet il y a ecrit "Password" en data, on va lire a la suite de celui la
+# On recupere lettre par lettre le mot de passe tout en supprimant un caractere quand on a 7f (qui correspond a del)
+
+# ft_waNDReL0L

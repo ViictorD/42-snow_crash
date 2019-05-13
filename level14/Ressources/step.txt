@@ -1,0 +1,14 @@
+objdump -D /bin/getflag | less
+# watch for ptrace address: 0x804898e
+# watch for getuid address: 0x8048b0a
+
+gdb /bin/getflag
+> b 0x804898e
+> b 0x8048b0a
+> r
+> set $eflags = 0x200206 # to inverse SF flag
+> c
+> set $eax = 3014
+> r
+
+done.

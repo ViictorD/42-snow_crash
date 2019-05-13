@@ -1,0 +1,16 @@
+# Apres analyse du binaire on voit que "access" est utilise avant "open".
+# On va donc essayer de mettre un lien symbolique qui pointe sur un fichier avec des droits,
+# et de changer le lien vers le token apres qu'il est passe la fonction "access".
+# (Cette technique est explique dans le man de "access")
+
+# Dans la vm:
+
+mkdir /tmp/level10
+# copie colle le script
+
+
+# Sur le mac:
+nc -lk 6969
+
+# Dans la vm:
+sh /tmp/level10/run.sh

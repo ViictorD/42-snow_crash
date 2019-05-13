@@ -1,0 +1,6 @@
+# Apres avoir lu le code avec objdump, on voit qu'il y a un check pour voir si le nom du fichier est egale a "token".
+# Il suffit de creer un symlink avec un nom different.
+
+ln -s ~/token /tmp/test
+./level08 /tmp/test
+

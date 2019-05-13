@@ -1,0 +1,11 @@
+# On voit un fichier crontab dans /var/mail.
+# On cat le shellscript qui est appele dans /usr/sbin/openarenaserver.
+
+# On voit que qu'il execute puis supprimer les fichier dans /opt/openarenaserver.
+
+# On creer donc un fichier:
+
+cd /opt/openarenaserver
+echo "getflag > /opt/openarenaserver/ret" > flag
+
+# On attent que la routine passe

